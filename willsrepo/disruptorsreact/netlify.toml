@@ -2,8 +2,8 @@
   # Since this appears to be a pre-built static site, skip build command
   command = "echo 'Using pre-built files'"
   
-  # Directory to publish (where the pre-built files are)
-  publish = "public/build"
+  # Directory to publish (root has all the built files)
+  publish = "."
 
   # Environment variables for build
   [build.environment]
