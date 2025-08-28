@@ -1,0 +1,844 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+@font-face {
+    font-family: 'OT Neue Montreal';
+    src: url('../fonts/OTNeueMontreal-SemiBoldSemiSqueezed.eot');
+    src: url('../fonts/OTNeueMontreal-SemiBoldSemiSqueezed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OTNeueMontreal-SemiBoldSemiSqueezed.woff2') format('woff2'),
+        url('../fonts/OTNeueMontreal-SemiBoldSemiSqueezed.woff') format('woff'),
+        url('../fonts/OTNeueMontreal-SemiBoldSemiSqueezed.ttf') format('truetype'),
+        url('../fonts/OTNeueMontreal-SemiBoldSemiSqueezed.svg#OTNeueMontreal-SemiBoldSemiSqueezed') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'PP Supply Mono';
+    src: url('../fonts/PPSupplyMono-Regular.eot');
+    src: url('../fonts/PPSupplyMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PPSupplyMono-Regular.woff2') format('woff2'),
+        url('../fonts/PPSupplyMono-Regular.woff') format('woff'),
+        url('../fonts/PPSupplyMono-Regular.ttf') format('truetype'),
+        url('../fonts/PPSupplyMono-Regular.svg#PPSupplyMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+     font-family: 'PP Supply Mono';
+     overflow-x: hidden;
+     background: url('../images/main-bg.jpg') repeat;
+}
+
+.p-0 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1430px;
+    }
+}
+
+h1 {
+    color: #2B2B2B;
+    font-family: 'OT Neue Montreal';
+    font-size: 220.302px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 198.59px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #2B2B2B;
+    font-family: 'OT Neue Montreal';
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68.6px;
+    text-transform: uppercase;
+}
+
+.va-ctr {
+    align-items: center;
+    display: flex;
+}
+
+.primary-btn {
+    background: #2B2B2B;
+    color: #F1EDE9;
+    text-align: center;
+    font-family: 'PP Supply Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 19px 10px
+}
+
+.primary-btn:hover {
+    color: #F1EDE9;
+    text-decoration: none;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.header .navigation {
+    display: inline-block;
+}
+
+.header .navigation li {
+    display: inline-block;
+    color: #2B2B2B;
+    text-align: center;
+    font-family: 'PP Supply Mono';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 16px;
+}
+
+
+.header .navigation li a {
+    color: #2B2B2B;
+    text-decoration: none;
+}
+
+.main-sec {
+    padding: 130px 0 21px 0;
+    background: url(../images/logo-emboss.png) center 40px no-repeat;
+}
+
+.main-sec h1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.main-sec h2 {
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+
+.main-sec .sep-main {
+    width: 100%;
+    background: #2B2B2B;
+}
+
+.main-sec .sep-main.fr {
+    height: 1px;
+    margin-bottom: 18px;
+}
+
+.main-sec .sep-main.sec {
+    height: 2px;
+    margin-bottom: 16px;
+}
+
+.main-sec .sep-main.th {
+    height: 4px;
+    margin-bottom: 14px;
+}
+
+.main-sec .sep-main.ft {
+    height: 7px;
+    margin-bottom: 8px;
+}
+
+.main-sec .sep-main.fv {
+    height: 9px;
+    margin-bottom: 11px;
+}
+
+.main-sec .sep-main.sx {
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.book-call-cta a {
+    display: flex;
+    align-items: center;
+    background: #2B2B2B;
+    padding: 16px 21px;
+    justify-content: space-between;
+    color: #F1EDE9;
+    font-family: 'PP Supply Mono';
+    font-size: 39.645px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47.65px;
+    text-transform: uppercase;
+}
+
+.book-call-cta a:hover {
+    text-decoration: none;
+}
+
+
+.mobile-sec .cont{
+    background: url('../images/mobile-sec-bg.jpg') no-repeat center top;
+    background-size: cover;
+    padding: 67px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-sec .cont:before {
+    content: '';
+    background: url('../images/hand-robot.png') no-repeat center top;
+    width: 510px;
+    height: 231px;
+    position: absolute;
+    left: -57px;
+    top: 127px;
+}
+
+.mobile-sec .cont:after {
+    content: '';
+    background: url('../images/hand-human.png') no-repeat center top;
+    width: 578px;
+    height: 235px;
+    position: absolute;
+    right: -92px;
+    bottom: 215px;
+}
+
+
+.who-we-are {
+    padding: 20px 0 40px 0;
+    text-align: center;
+}
+
+.who-we-are p {
+    color: #2B2B2B;
+    font-family: 'PP Supply Mono';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.who-we-are p span {
+    padding-right: 5px;
+}
+
+
+.who-we-do {
+    padding: 20px 0 40px 0;
+    text-align: center;
+}
+
+.who-we-do p {
+    color: #2B2B2B;
+    font-family: 'PP Supply Mono';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.who-we-do p span {
+    padding-right: 5px;
+}
+
+.slider {
+    width: 1000%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.slider li {
+    width: 752px;
+    height: 930px;
+    background: url('../images/what-we-do-bx.png') no-repeat center top;
+    text-align: left;
+    list-style: none;
+    padding: 111px;
+    position: relative;
+    display: inline-block;
+}
+
+.slider div {
+    position: absolute;
+    bottom: 105px;
+    padding-right: 111px;
+}
+
+.slider li div h3 {
+    color: #F1EDE9;
+    font-family: 'OT Neue Montreal';
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68.6px; 
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.slider li div p {
+    color: #F1EDE9;
+    text-align: justify;
+    font-family: 'PP Supply Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none;
+}
+
+.fea-clients {
+    padding: 20px 0 40px 0;
+    text-align: center;
+}
+
+.fea-clients p {
+    color: #2B2B2B;
+    font-family: 'PP Supply Mono';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.fea-clients p span {
+    padding-right: 5px;
+}
+
+.fea-clients .cont {
+    background: #2B2B2B;
+    padding: 70px 170px;
+}
+
+.fea-clients .logo-row {
+    margin-bottom: 86px;
+}
+
+.ft-quote {
+    padding: 60px 0 40px 0;
+}
+
+.ft-quote h3 {
+    color: #2B2B2B;
+    font-family: 'OT Neue Montreal';
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58.594px;
+    text-transform: uppercase;
+}
+
+.ft-quote p {
+    color: #2B2B2B;
+    text-align: justify;
+    font-family: 'PP Supply Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 393px;
+    margin-bottom: 40px;
+}
+
+.ft-quote .ft-r {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ft-quote .sep-main {
+    width: 100%;
+    background: #2B2B2B;
+}
+
+.ft-quote .sep-main.fr {
+    height: 1px;
+    margin-bottom: 18px;
+}
+
+.ft-quote .sep-main.sec {
+    height: 2px;
+    margin-bottom: 16px;
+}
+
+.ft-quote .sep-main.th {
+    height: 4px;
+    margin-bottom: 14px;
+}
+
+.ft-quote .sep-main.ft {
+    height: 7px;
+    margin-bottom: 8px;
+}
+
+.ft-quote .sep-main.fv {
+    height: 9px;
+    margin-bottom: 11px;
+}
+
+.ft-quote .sep-main.sx {
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.pre-footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pre-footer .links {
+    display: inline-block;
+    list-style: none;
+}
+
+.pre-footer .links li {
+    color: #2B2B2B;
+    text-align: center;
+    font-family: 'PP Supply Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.pre-footer .links li a {
+    color: #2B2B2B;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 160px 30px 40px 30px;
+    background: url(../images/logo-emboss.png) center 40px no-repeat;
+}
+
+.footer p {
+    color: #2B2B2B;
+    font-family: 'PP Supply Mono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    line-height: 1.8;
+}
+
+.footer .social {
+    display: inline-block;
+    list-style: none;
+}
+
+.footer .social li {
+    display: inline-block;
+    margin: 0 13px;
+}
+
+.main-sec.abt {
+    padding-top: 186px;
+}
+
+.main-sec.abt h2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 894px;
+    margin-bottom: 70px;
+}
+
+.main-sec.contact h1 {
+    margin-bottom: 168px;
+}
+
+.main-sec.contact h2 {
+    font-size: 61px;
+    text-transform: none;
+}
+
+.main-sec.srv {
+    background: transparent;
+    padding-bottom: 110px;
+}
+
+.main-sec.srv h1 {
+    text-align: left;
+    margin-bottom: 114px;
+}
+
+.main-sec p {
+    color: #2B2B2B;
+    text-align: justify;
+    font-family: 'PP Supply Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+
+.srv-what-we-do .cont {
+    padding: 60px 30px;
+    background: #CAC1B8;
+}
+
+.srv-what-we-do h2 {
+    margin-bottom: 50px;
+}
+
+.srv-what-we-do p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+.accordion-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+.accordion-title {
+  cursor: pointer;
+  color: #2B2B2B;
+    font-family: OT Neue Montreal;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.accordion-content {
+  display: none;
+  padding-top: 20px;
+}
+
+.accordion-title small {
+
+    font-family: 'PP Supply Mono';
+    display: block;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.accordion-title .toggle-sign {
+    font-family: 'PP Supply Mono';
+    width: 39px;
+    height: 39px;
+    font-weight: normal;
+    float: right;
+    background: #2b2b2b;
+    border-radius: 50%;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.accordion-title .toggle-sign.plus {
+  background: url('../images/plus-icon.png') no-repeat center center #2b2b2b;
+}
+.accordion-title .toggle-sign.minus {
+  background: url('../images/minus-icon.png') no-repeat center center #2b2b2b;
+
+}
+
+
+.main-sec.faq {
+    background: transparent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-sec.faq h1 {
+    margin-bottom: 0px;
+}
+
+
+.faq-sec .cont {
+    padding: 60px 30px;
+    background: #CAC1B8;
+}
+
+.faq-sec h2 {
+    margin-bottom: 50px;
+}
+
+.faq-sec p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+.work-lst {
+    padding-bottom: 0;
+}
+
+.work-lst a:hover {
+    text-decoration: none;
+}
+
+
+.work-lst img {
+    max-width: 100%;
+}
+
+.work-lst .col-sm-6 {
+    min-height: 914px;
+}
+
+.work-lst .col-sm-6:nth-child(odd) {
+    padding-right: 0px;
+}
+
+.work-lst .col-sm-6:nth-child(even) {
+    border-left: 1px solid #000;
+    padding-left: 0px;
+}
+
+.work-lst .dt {
+    padding: 20px 30px 110px 30px;
+}
+
+.work-lst .dt h3 {
+    color: #2B2B2B;
+    font-family: OT Neue Montreal;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.work-lst .dt p {
+    color:#2B2B2B;
+    font-family: PP Supply Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.case-study-dt {
+    margin-bottom: 120px;
+}
+
+.case-study-dt h4 {
+    color: #2B2B2B;
+    font-family: PP Supply Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.case-study-dt p {
+    color: #2B2B2B;
+    text-align: justify;
+    font-family: PP Supply Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+.case-study-dt .col-info.frst {
+    max-width: 396px;
+}
+
+.case-study-dt .col-info ul {
+    list-style: none;
+    margin: 0px;
+}
+
+.case-study-dt .col-info ul li {
+    font-family: PP Supply Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+.case-study-dt .col-info ul li span {
+    max-width: 202px;
+    width: 100%;
+    display: inline-block;
+}
+
+.case-study-lst-img {
+    margin-bottom: 15px;
+}
+
+.case-study-lst-img .col-full {
+    width: 100%;
+}
+
+.case-study-lst-img .col-half {
+    width: 50%;
+}
+
+.case-study-lst-img .col-img {
+    float: left;
+    padding: 15px;
+}
+
+.case-study-lst-img .col-img img {
+    width: 100%;
+}
+
+
+.next-project {
+    padding-bottom: 184px;
+    background: url(../images/logo-emboss.png) center 194px no-repeat;
+}
+
+
+.next-project h3 {
+    color: #2B2B2B;
+    font-family: PP Supply Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.next-project h2 {
+    color: #2B2B2B;
+    font-family: OT Neue Montreal;
+    font-size: 220.302px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 198.59px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+}
