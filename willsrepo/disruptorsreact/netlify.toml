@@ -1,17 +1,12 @@
 [build]
-  # Build command
-  command = "npm run build"
+  # No build command needed for static HTML site
+  command = ""
   
-  # Directory to publish (where build outputs)
-  publish = "public/build"
+  # Directory to publish (root directory contains static files)
+  publish = "."
   
-  # Base directory (where package.json is located) - root of repo
+  # Base directory
   base = "."
-
-  # Environment variables for build
-  [build.environment]
-    NODE_VERSION = "18"
-    NPM_VERSION = "9"
 
 # Headers for better security and caching
 [[headers]]
