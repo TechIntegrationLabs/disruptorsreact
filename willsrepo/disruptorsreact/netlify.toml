@@ -1,9 +1,12 @@
 [build]
-  # Since this appears to be a pre-built static site, skip build command
-  command = "echo 'Using pre-built files'"
+  # Build command
+  command = "npm run build"
   
-  # Directory to publish (React build output is in public/build)
+  # Directory to publish (where build outputs)
   publish = "public/build"
+  
+  # Base directory (where package.json is located) - root of repo
+  base = "."
 
   # Environment variables for build
   [build.environment]
