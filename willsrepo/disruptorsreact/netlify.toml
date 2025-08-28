@@ -1,12 +1,17 @@
 [build]
-  # No build command needed for static HTML site
-  command = ""
+  # Build command for React app
+  command = "npm run build"
   
-  # Directory to publish (root directory contains static files)
-  publish = "."
+  # Directory to publish (React build output)
+  publish = "build"
   
   # Base directory
   base = "."
+
+  # Environment variables for build
+  [build.environment]
+    NODE_VERSION = "18"
+    NPM_VERSION = "9"
 
 # Headers for better security and caching
 [[headers]]
